@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../styles/work-company.module.css"
-import zyngaLogo from "../images/zynga.jpg"
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -8,7 +7,7 @@ const Company = (props) => (
     <Row className={styles.company}>
         <Col lg="3">
             <div className={styles.logo}>
-                <img src={props.logo}></img>
+                <img src={props.logo} alt={props.name}></img>
             </div>
         </Col>
         <Col>

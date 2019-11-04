@@ -21,14 +21,28 @@ ul > li {
     background-size: cover;
 }
 
+.navbar {
+    background-color: transparent;
+}
 .nav {
-    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 0.25rem;
+    margin-left: -1rem;
     width: 100%;
     position: fixed;
+    justify-content: center;
+    transition: 0.25s;
 }
 
-.nav > ul > li {
-    padding: 1rem 3rem;
+.navOpaque {
+    background-color: #333;
+    transition: 0.25s;
+}
+
+.navlink {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    color: white !important;
 }
 
 .banner {

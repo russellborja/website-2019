@@ -14,7 +14,7 @@ const Footer = () => (
                 <li><a><FontAwesomeIcon icon={faLinkedinIn}/></a></li>
                 <li><a><FontAwesomeIcon icon={faGithub}/></a></li>
             </ul>
-            <p>© Copyright 2019 Russell Borja. Powered by Gatsby and React-Bootstrap.</p>
+            <p>© Copyright 2019 Russell Borja. Built from scratch using Gatsby and React-Bootstrap.</p>
         </Container>
     </div>
 )
