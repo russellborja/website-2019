@@ -1,0 +1,25 @@
+.company {
+    padding-top: 1rem;
+}
+
+.subtitle {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subtitle span {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.logo {
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 15%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.logo img {
+    height: 100%;
+}

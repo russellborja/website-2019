@@ -1,0 +1,28 @@
+.about {
+    background-color: #2B2B2B;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about p {
+    margin-bottom: 0px;
+}
+
+.about h2 {
+    color: white;
+}
+
+.profile {
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 15%;
+}
+.profile img {
+    width: 100%;
+}
+
+.row {
+    flex-direction: column;
+    margin-top: 2rem;
+}

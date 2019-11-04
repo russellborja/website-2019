@@ -1,0 +1,14 @@
+.travels {
+    background-color: #838C95;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.travels h1, h4 {
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.video {
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+ul > li {
+    display: inline-block;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+    background: no-repeat center fixed;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/scotland_road.jpg);
+    background-size: cover;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+}
+
+.nav > ul > li {
+    padding: 1rem 3rem;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 8rem;
+    border-bottom: 1px solid #7A7A7A;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner h2 {
+    font-size: 2rem;
+}
+
+.banner > ul > li {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+}
