@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container"
 import Col from 'react-bootstrap/Col'
 
 const Travels = () => (
-    <div className={styles.travels}>
+    <div className={styles.travels} id="travels">
         <Container>
             <Col lg="12" className={styles.video}>
                 <h1>Travels</h1>

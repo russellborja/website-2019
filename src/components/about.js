@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Media from 'react-bootstrap/Media'
 
 const About = () => (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
         <Container>
             <Row>
                 <Col lg="3">

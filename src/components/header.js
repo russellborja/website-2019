@@ -2,8 +2,9 @@ import React from "react"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import styles from "../styles/header.module.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebookF, faInstagram, faYoutube, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
+import resume from "../resume/FullTimeResumeZynga.pdf"
+import Contact from "./contact"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -22,6 +23,10 @@ export default class Header extends React.Component {
         });
     }
 
+    scrollToTop = () => {
+        scroll.scrollToTop();
+    }
+
     render() {
         return (
             <header className={styles.hero}>
@@ -29,23 +34,18 @@ export default class Header extends React.Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse>
                         <Nav className={`${styles.nav} ${this.state.isTop ? '': styles.navOpaque}`}>
-                            <Nav.Link className={styles.navlink}>ABOUT</Nav.Link>
-                            <Nav.Link className={styles.navlink}>WORK</Nav.Link>
-                            <Nav.Link className={styles.navlink}>TRAVELS</Nav.Link>
-                            <Nav.Link className={styles.navlink}>RESUME</Nav.Link>
+                            <Link className={styles.navlink} onClick={this.scrollToTop}>HOME</Link>
+                            <Link className={styles.navlink} to="about" activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>ABOUT</Link>
+                            <Link className={styles.navlink} to="work" activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>WORK</Link>
+                            <Link className={styles.navlink} to="travels" activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>TRAVELS</Link>
+                            <a className={styles.navlink} href={resume}>RESUME</a>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
                 <div className={styles.banner}>
                     <h1>Russell Borja</h1>
                     <h2>Software Engineer</h2>
-                    <ul>
-                        <li><a><FontAwesomeIcon icon={faFacebookF}/></a></li>
-                        <li><a><FontAwesomeIcon icon={faInstagram}/></a></li>
-                        <li><a><FontAwesomeIcon icon={faYoutube}/></a></li>
-                        <li><a><FontAwesomeIcon icon={faLinkedinIn}/></a></li>
-                        <li><a><FontAwesomeIcon icon={faGithub}/></a></li>
-                    </ul>   
+                    <Contact/> 
                 </div>
             </header>
         )
