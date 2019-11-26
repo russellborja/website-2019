@@ -1,0 +1,8 @@
+{
+    "name": "Zynga",
+    "title": "Software Engineer II",
+    "link": "https://www.zynga.com/",
+    "location": "Toronto, ON",
+    "duration": "Dec 2017 - Present",
+    "description": "I am a member and key contributor to the User Acquisition Engineering team. I build and maintain data pipelines using Apache Airflow and Spark that optimize Zynga's $250 million advertising budget and empower global marketing decisions. I work with a wide variety of technologies, from helping game studios integrate client SDK's to gather user data, to creating data workflows that gather and transform this data, to building the dashboards that present this information to the stakeholders."
+}

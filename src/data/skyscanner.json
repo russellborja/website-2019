@@ -1,0 +1,8 @@
+{
+    "name": "Skyscanner",
+    "title": "Software Engineer I",
+    "link": "https://www.skyscanner.net/",
+    "location": "Edinburgh, UK",
+    "duration": "Sept 2016 - Dec 2017",
+    "description": "At Skyscanner, I was a member of the Web Infrastructure squad that was responsible for re-architecting the web platform from the ground up. Using OpenTable's Open Components technology, I created re-usable and maintainable Javascript libraries such as Google Analytics tracking that were consumed by all other front-end teams within the organization. I also contributed to the re-design of the website's visuals in 2017 during the company-wide \"spring clean\"."
+}

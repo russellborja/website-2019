@@ -7,7 +7,9 @@ const Company = (props) => (
     <Row className={styles.company}>
         <Col lg="3">
             <div className={styles.logo}>
-                <img src={props.logo} alt={props.name}></img>
+                <a href={props.link}>
+                    <img src={props.logo} alt={props.name}></img>
+                </a>
             </div>
         </Col>
         <Col>
