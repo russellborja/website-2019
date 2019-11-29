@@ -24,3 +24,26 @@
 .logo img {
     height: 100%;
 }
+
+@media (max-width: 576px) {
+    .logo {
+        margin: auto;
+    }
+
+    .company h2 {
+        text-align: center;
+    }
+
+    .subtitle {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subtitle span {
+        display: none;
+    }
+
+    .subtitle h5 {
+        font-size: 1.1rem;
+    }
+}

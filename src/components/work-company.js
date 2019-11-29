@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 
 const Company = (props) => (
     <Row className={styles.company}>
-        <Col lg="3">
+        <Col lg={3} md={4} sm={5}>
             <div className={styles.logo}>
                 <a href={props.link}>
                     <img src={props.logo} alt={props.name}></img>

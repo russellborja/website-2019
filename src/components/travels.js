@@ -9,7 +9,10 @@ const Travels = () => (
             <Col lg="12" className={styles.video}>
                 <h1>Travels</h1>
                 <h4>39 countries and counting. Check out my YouTube channel for my latest travel vlogs!</h4>
-                <iframe title="video" width="560" height="315" src="https://www.youtube.com/embed/TM4hiDw-7Z8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className={styles.videoWrapper}>
+                    <iframe className={styles.videoPlayer} title="video" width="560" height="315" src="https://www.youtube.com/embed/TM4hiDw-7Z8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
             </Col>
             
         </Container>

@@ -5,6 +5,8 @@ import styles from "../styles/header.module.css"
 import resume from "../resume/FullTimeResumeZynga.pdf"
 import Contact from "./contact"
 import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -30,7 +32,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <header className={styles.hero}>
-                <Navbar fixed="top" expand="lg" className={styles.navbar}>
+                <Navbar collapseOnSelect fixed="top" expand="lg" className={styles.navbar}>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse>
                         <Nav className={`${styles.nav} ${this.state.isTop ? '': styles.navOpaque}`}>
@@ -45,7 +47,8 @@ export default class Header extends React.Component {
                 <div className={styles.banner}>
                     <h1>Russell Borja</h1>
                     <h2>Software Engineer</h2>
-                    <Contact/> 
+                    <Contact/>
+                    <Link to="about" className={styles.scrolldown} activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}><FontAwesomeIcon icon={faAngleDown}/></Link>
                 </div>
             </header>
         )

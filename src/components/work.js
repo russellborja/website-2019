@@ -30,7 +30,7 @@ const Work = () => (
     <Container className={styles.work} id="work">
         <h1>Work Experience</h1>
         {companies.map((company, index) =>
-            <Company name={company.name} logo={company.logo} title={company.title} link={company.link} location={company.location} duration={company.duration} description={company.description}/>
+            <Company key={index} name={company.name} logo={company.logo} title={company.title} link={company.link} location={company.location} duration={company.duration} description={company.description}/>
         )}
     </Container>
 )

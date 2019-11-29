@@ -24,5 +24,16 @@
 
 .row {
     flex-direction: column;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+    .profile {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

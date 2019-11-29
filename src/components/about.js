@@ -4,13 +4,12 @@ import profilePic from "../images/profile.jpg"
 import Container from "react-bootstrap/Container"
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Media from 'react-bootstrap/Media'
 
 const About = () => (
     <div className={styles.about} id="about">
         <Container>
             <Row>
-                <Col lg="3">
+                <Col lg={3} md={4} sm={5}>
                     <div className={styles.profile}>
                         <img
                             src={profilePic}
@@ -20,7 +19,7 @@ const About = () => (
                     
                 </Col>
                 <Col>
-                    <Row>
+                    <Row className={styles.row}>
                         <h2>About Me</h2>
                         <p>I am currently a Software Engineer at Zynga, building solutions that optimize the way $250M of advertising
                             are spent across the company's portfolio of mobile games. As a University of Waterloo graduate, I have honed

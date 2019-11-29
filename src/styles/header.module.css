@@ -15,7 +15,6 @@ ul > li {
     height: 100vh;
     width: 100%;
     display: flex;
-    min-height: 500px;
     background: no-repeat center fixed;
     background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/scotland_road.jpg);
     background-size: cover;
@@ -80,4 +79,56 @@ ul > li {
 .banner > ul > li {
     padding: 1rem 1.5rem;
     font-size: 2rem;
+}
+
+.scrolldown {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 10px;
+}
+
+.scrolldown:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .banner h1 {
+        font-size: 6rem;
+    }
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+    .nav {
+        width: auto;
+        background-color: #333;
+        padding: 0.25rem 0.75rem;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner h1 {
+        font-size: 5rem;
+    }
+    .banner > ul > li {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .scrolldown {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 3.5rem;
+    }
+    .banner h2 {
+        font-size: 1.25rem;
+    }
+    .banner > ul > li {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
 }

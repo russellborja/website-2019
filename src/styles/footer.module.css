@@ -12,3 +12,10 @@
 .footer p {
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    .footer ul > li {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
