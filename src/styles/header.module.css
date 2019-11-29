@@ -119,7 +119,7 @@ ul > li {
         display: none;
     }
     .hero {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/scotland_road_small.jpg);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/queenstown.jpg);
     }
 }
 
