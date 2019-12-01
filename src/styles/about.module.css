@@ -27,7 +27,7 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .profile {
         margin: auto;
         margin-bottom: 1rem;

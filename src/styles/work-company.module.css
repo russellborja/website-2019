@@ -30,15 +30,21 @@
 }
 
 @media (max-width: 991px) {
-    .subtitle span {
+    .subtitle span:nth-child(2) {
         display: none;
     }
-    .subtitle h5:not(:first-child) {
+    .subtitle h5:nth-child(3) {
         display: none;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+    .subtitle span {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
     .logo {
         margin: auto;
     }
