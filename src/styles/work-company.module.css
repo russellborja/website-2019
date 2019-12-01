@@ -3,6 +3,10 @@
     padding-bottom: 1rem;
 }
 
+.company hr {
+    width: 75%;
+}
+
 .subtitle {
     padding-left: 15px;
     padding-right: 15px;
@@ -25,6 +29,15 @@
     height: 100%;
 }
 
+@media (max-width: 991px) {
+    .subtitle span {
+        display: none;
+    }
+    .subtitle h5:not(:first-child) {
+        display: none;
+    }
+}
+
 @media (max-width: 576px) {
     .logo {
         margin: auto;
@@ -37,10 +50,6 @@
     .subtitle {
         flex-direction: column;
         text-align: center;
-    }
-
-    .subtitle span {
-        display: none;
     }
 
     .subtitle h5 {

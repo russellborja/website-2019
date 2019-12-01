@@ -12,7 +12,7 @@ const Company = (props) => (
                 </a>
             </div>
         </Col>
-        <Col>
+        <Col lg={9} md={8} sm={7}>
             <h2>{props.name}</h2>
             <Row className={styles.subtitle}>
                 <h5>{props.title}</h5><span>•</span>
@@ -21,6 +21,7 @@ const Company = (props) => (
             </Row>
             <p>{props.description}</p>
         </Col>
+        <hr></hr>
     </Row>
 )
 
