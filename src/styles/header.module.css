@@ -105,6 +105,23 @@ ul > li {
         padding: 0.25rem 0.75rem;
         margin: 0.5rem 0;
     }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .hero {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/queenstown.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
     .hero {
         background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/queenstown.jpg);
         background-size: cover;
