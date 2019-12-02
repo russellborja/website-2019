@@ -120,13 +120,13 @@ ul > li {
     }
     .hero {
         background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/queenstown.jpg);
+        background-size: auto;
+        background-position: center;
+        background-attachment: scroll;
     }
 }
 
 @media (max-width: 480px) {
-    .hero {
-        background-size: auto;
-    }
     .banner h1 {
         font-size: 3.5rem;
     }
