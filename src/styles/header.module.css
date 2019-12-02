@@ -92,6 +92,18 @@ ul > li {
     text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+    .hero {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/queenstown.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+    .scrolldown {
+        display: none;
+    }
+}
+
 @media (max-width: 900px) {
     .banner h1 {
         font-size: 6rem;
@@ -107,29 +119,6 @@ ul > li {
     }
 }
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-    .hero {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/queenstown.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
-    }
-}
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) { 
-    .hero {
-        background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/queenstown.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
-    }
-}
-
 @media (max-width: 767px) {
     .banner h1 {
         font-size: 5rem;
@@ -137,9 +126,6 @@ and (-webkit-device-pixel-ratio : 3) {
     .banner > ul > li {
         padding: 1rem 1.5rem;
         font-size: 1.5rem;
-    }
-    .scrolldown {
-        display: none;
     }
 }
 
