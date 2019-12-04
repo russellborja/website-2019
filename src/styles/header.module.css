@@ -16,7 +16,7 @@ ul > li {
     width: 100%;
     display: flex;
     background: no-repeat center fixed;
-    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/scotland_road.jpg);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),url(../images/scotland_road_small.jpg);
     background-size: cover;
 }
 
