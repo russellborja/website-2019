@@ -11,6 +11,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
+        this.hamburgerRef = React.createRef();
         this.state = {
             isTop: true,
         }
@@ -27,19 +28,24 @@ export default class Header extends React.Component {
 
     scrollToTop = () => {
         scroll.scrollToTop();
+        this.handleHamburgerClick();
+    }
+
+    handleHamburgerClick = () => {
+        this.hamburgerRef.current.click();
     }
 
     render() {
         return (
             <header className={styles.hero}>
                 <Navbar collapseOnSelect fixed="top" expand="lg" className={styles.navbar}>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle ref={this.hamburgerRef} aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse>
                         <Nav className={`${styles.nav} ${this.state.isTop ? '': styles.navOpaque}`}>
                             <Link className={styles.navlink} onClick={this.scrollToTop}>HOME</Link>
-                            <Link className={styles.navlink} to="about" activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>ABOUT</Link>
-                            <Link className={styles.navlink} to="work" activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>WORK</Link>
-                            <Link className={styles.navlink} to="travels" activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>TRAVELS</Link>
+                            <Link className={styles.navlink} to="about" onClick={this.handleHamburgerClick} activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>ABOUT</Link>
+                            <Link className={styles.navlink} to="work" onClick={this.handleHamburgerClick} activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>WORK</Link>
+                            <Link className={styles.navlink} to="travels" onClick={this.handleHamburgerClick} activeClass={styles.navActive} duration={500} spy={true} offset={10} smooth={true}>TRAVELS</Link>
                             <a className={styles.navlink} href={resume}>RESUME</a>
                         </Nav>
                     </Navbar.Collapse>
