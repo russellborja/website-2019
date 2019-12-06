@@ -23,6 +23,11 @@ ul > li {
 .navbar {
     background-color: transparent;
 }
+
+.navbar button {
+    background-color: #333;
+}
+
 .nav {
     padding-top: 1rem;
     padding-bottom: 0.25rem;
