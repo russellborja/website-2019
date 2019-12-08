@@ -20,7 +20,7 @@ export default class Travels extends React.Component {
 
     countryImage = (country, index) => {
         return (
-            <Col key={index} lg={2} md={3} sm={4} xs={6}>
+            <Col key={index} lg={2} md={3} sm={4} xs={4}>
                 <span key={index} onClick={() => this.setState({photoIndex: index, isOpen: true})} title={country.name} class={`flag-icon flag-icon-${country.code}`}></span>
             </Col>
         )
