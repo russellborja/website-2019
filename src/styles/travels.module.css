@@ -15,6 +15,18 @@
     margin-bottom: 2rem;
 }
 
+.travels span {
+    width: 133px;
+    height: 100px;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
+
+.travels span:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .video {
     text-align: center;
 }
