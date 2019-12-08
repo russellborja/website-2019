@@ -1,6 +1,6 @@
 .footer {
     background-color: #2B2B2B;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -11,6 +11,27 @@
 
 .footer p {
     text-align: center;
+}
+
+.scrolldown {
+    font-size: 3rem;
+    position: relative;
+    bottom: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+}
+
+.scrolldown:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .scrolldown {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
