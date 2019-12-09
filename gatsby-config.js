@@ -8,5 +8,13 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Russell Borja`
-  }
+  },
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-154202197-1",
+      },
+    },
+  ],
 }
