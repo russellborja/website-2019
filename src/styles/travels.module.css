@@ -20,6 +20,7 @@
     height: 60px;
     border-radius: 10%;
     margin-bottom: 1rem;
+    opacity: 0.9;
 }
 
 .travels span:hover {
