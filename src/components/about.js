@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../styles/about.module.css"
-import profilePic from "../images/profile.jpg"
+import profilePic from "../images/profile.png"
 import Container from "react-bootstrap/Container"
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
